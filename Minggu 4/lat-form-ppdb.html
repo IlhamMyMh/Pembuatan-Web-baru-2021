@@ -1,226 +1,133 @@
-  <!DOCTYPE html>
+<!DOCTYPE html>
 <html>
 <head>
     <title>FORMULIR PPDB JALUR ZONASI TAHUN 2020</title>
 </head>
 <body>
-    <div class ="wrap" style="">
-    <fieldset>
-    <table width="750">
-    <h1 style="background-color:rgb(41, 82, 216) ;" align="center">FORMULIR PPDB JALUR ZONASI TAHUN 2020/2021</h1>
-  <style>
-    body {
-    background-color: rgb(226, 162, 25);
-    }
-    input[type=text], [type=number], [type=date], [type=email] {
-    width: 100%;
-    padding: 12px 20px;
-    margin: 8px 0;
-    display: inline-block;
-    border: 1px solid #ccc;
-    border-radius: 30px;
-    box-sizing: border-box;
-    }
-    textarea {
-    width: 100%;
-    padding: 12px 20px;
-    margin: 8px 0;
-    display: inline-block;
-    border: 1px solid #ccc;
-    border-radius: 30px;
-    box-sizing: border-box;
-    }
-    input[type=submit] {
-    width: 100%;
-    background-color: #4CAF50;
-    color: white;
-    padding: 20px 20px;
-    margin: 10px 0;
-    border: none;
-    border-radius:30px;
-    cursor: pointer;
-    }
-    input[type=reset] {
-    width: 100%;
-    background-color: #fa0a0a;
-    color: white;
-    padding: 20px 20px;
-    margin: 10px 0;
-    border: none;
-    border-radius: 30px;
-    cursor: pointer;
-    }
-    input[type=file] {
-    width: 95%;
-    background-color: #cf401c;
-    color: white;
-    padding: 14px 20px;
-    margin: 8px 0;
-    border: none;
-    border-radius: 30px;
-    cursor: pointer;
-    }
-    h2 {
-    text-align: center;
-    font-family: 'Times New Roman', Times, serif;
-    }
-    td {
-    font-family: 'Times New Roman', Times, serif;
-    font-size: large;
-    }
-  </style>
-<h2><img src="Smp1kaliwungu.JPG" alt="Smp1kaliwungu" width="180px" height="200px" style="float: left;">FORMULIR PPDB JALUR ZONASI<br>SMP NEGERI 01 KALIWUNGU<br>TAHUN AJARAN 2020/2021</h2>
-<br>
-<br>
-<br>
-<br>
-</br>
-<table>
-  <form action="proses.php" method="POST" target="_blank" name="fppdb">
-  <tr>
-    <td>
-      <h3>INFO PENDAFTARAN</h3>
-    </td>
-  </tr>
-  <tr>
-    <td><label for="fnisn">NISN</label></td>
-    <td><input type="number" id="fnisn" name="fnisn" placeholder="Masukkan NISN.." required></td>
-  </tr>
-  <tr>
-    <td><label for="asalsekolah">Asal sekolah</label></td>
-    <td><input type="text" id="asalsekolah" name="asalsekolah" size="100" placeholder="Masukkan Asal Sekolah.." required></td>
-  </tr>
-  <tr>
-    <td><label for="lulus">Tahun Lulus</label></td>
-    <td><input type="number" id="tlulus" name="tlulus" placeholder="Masukkan Tahun Lulus.." required></td>
-  </tr>
-  <tr>
-    <td><label for="fcijazah"><i>(lampirkan foto copy Ijazah)</i></label></td>
-    <td><input type="file" id="fcijazah" name="fcijazah" required></td>
-  </tr>
-  <tr>
-    <td>
-      <h3>DATA CALON PESERTA</h3>
-    </td>
-  </tr>
-  <tr>
-    <td><label for="nlengkap">Nama Lengkap</label></td>
-    <td><input type="text" id="nlengkap" name="nlengkap" size="100" placeholder="Masukkan Nama Lengkap.." required></td>
-  </tr>
-  <tr>
-    <td><label for="nik">NIK</label></td>
-    <td><input type="number" id="nik" name="nik" size="100" placeholder="Masukkan NIK.." required></td>
-  </tr>
-  <tr>
-    <td><label for="tplahir">Tempat lahir</label></td>
-    <td><input type="text" id="tplahir" name="tplahir" size="100"  placeholder="Masukkan Tempat Lahir.." required></td>
-  </tr>
-  <tr>
-    <td rowspan="2"><label for="tglahir">Tanggal Lahir</label></td>
-    <td><input type="date" id="tglahir" name="tglahir" required></td>
-  <tr>
-    <label for="umur"></label></td>
-    <td><input type="number" name="umur" placeholder="Umur.." required></td>
-  </tr>
-  <tr>
-    <td><label for="fcakte"><i>Foto Copy Akte Kelahiran<br>Yang Telah Dilegalisir<br>(Di Lampirkan)</i></label></td>
-    <td><input type="file" id="fcakte" name="fcakte" required></td>
-  </tr>
-  <tr>
-    <td rowspan="2"><label for="jskelamin">Jenis Kelamin</label></td>
-    <td><input type="radio" id="Laki-laki" name="jskelamin" value="Laki-laki" required><label for="Laki-laki">Laki-laki</label></td>
-  </tr>
-  <tr>
-    <td><input type="radio" id="Perempuan" name="jskelamin" value="Perempuan" required><label for="Perempuan">Perempuan</label></td>
-  </tr>
-  <tr>
-    <td><label for="alamat">Alamat</label></td>
-    <td><textarea cols="97" rows="3" placeholder="Masukkan Alamat.." required></textarea></td>
-  </tr>
-  <tr>
-    <td><label for="desa">Desa/Kel.</label></td>
-    <td><input type="text" id="desa" name="desa" size="100" placeholder="Nama Desa/Kelurahan.." required></td>
-  </tr>
-  <tr>
-    <td><label for="kecamatan">Kecamatan</label></td>
-    <td><input type="text" id="kecamatan" name="kecamatan" size="100" placeholder="Nama Kecamatan.." required></td>
-  </tr>
-  <tr>
-    <td><label for="kabupaten">Kabupaten</label></td>
-    <td><input type="text" id="kabupaten" name="kabupaten" placeholder="Nama Kabupaten.."size="100" required></td>
-  </tr>
-  <tr>
-    <td><label for="provinsi">Provinsi</label></td>
-    <td><input type="text" id="provinsi" name="provinsi" placeholder="Nama Provinsi.." size="100" required></td>
-  </tr>
-  <tr>
-    <td><label for="email">Email Aktif</label></td>
-    <td><input type="email" id="email" name="email" size="100" placeholder="Masukkan Email Aktif.." required></td>
-  </tr>
-  <tr>
-    <td>
-    <h4>DATA ORANG TUA</h3><p><i>(lampirkan KK)</i></p></h4>
-    </td>
-    <td><label for="fckk"></label><input type="file" id="fckk" name="fckk" required></td>
-  </tr>
-  <tr>
-    <td><label for="nomorkk">Nomor Kartu Keluarga</label></td>
-    <td><input type="number" id="nomorkk" name="nomorkk" placeholder="Masukkan Nomor KK.." required></td>
-  </tr>
-  <tr>
-    <td><label for="ayahkandung">Nama Ayah Kandung</label></td>
-    <td><input type="text" id="ayahkandung" name="ayahkandung" size="100" placeholder="Masukkan Nama Ayah Kandung.." required></td>
-  </tr>
-  <tr>
-    <td><label for="agamaayah">Agama</label></td>
-    <td><input type="text" id="agamaayah" name="agamaayah" size="100" placeholder="Agama.." required></td>
-  </tr>
-  <tr>
-    <td><label for="pekerjaanayah">Pekerjaan</label></td>
-    <td><input type="text" id="pekerjaanayah" name="pekerjaanayah" size="100" placeholder="Pekerjaan Ayah Kandung.." required></td>
-  </tr>
-  <tr>
-    <td><label for="ibu kandung">Nama Ibu Kandung</label></td>
-    <td><input type="text" id="ibukandung" name="ibukandung" placeholder="Masukkan Nama Ibu Kandung.." size="100" required></td>
-  </tr>
-  <tr>
-    <td><label for="agamaibu">Agama</label></td>
-    <td><input type="text" id="agamaibu" name="agamaibu" size="100" placeholder="Agama Ibu.." required></td>
-  </tr>
-  <tr>
-    <td><label for="pekerjaanibu">Pekerjaan</label></td>
-    <td><input type="text" id="pekerjaanibu" name="pekerjaanibu" size="100" placeholder="Pekerjaan Ibu Kandung.." required></td>
-  </tr>
-  <tr>
-    <td><label for="alamatortu">Alamat</label></td>
-    <td><textarea cols="97" rows="3" placeholder="Masukkan Alamat Orang Tua.." required></textarea></td>
-  </tr>
-  <tr>
-    <td><label for="desaortu">Desa/Kel.</label></td>
-    <td><input type="text" id="desaortu" name="desaortu" size="100" placeholder="Nama Desa/Kelurahan.." required></td>
-  </tr>
-  <tr>
-    <td><label for="kecamatanortu">Kecamatan</label></td>
-    <td><input type="text" id="kecamatanortu" name="kecamatanortu" placeholder="Nama Kecamatan.." size="100" required></td>
-  </tr>
-  <tr>
-    <td><label for="kabupatenortu">Kabupaten</label></td>
-    <td><input type="text" id="kabupatenortu" name="kabupatenortu" size="100" placeholder="Nama Kabupaten.." required></td>
-  </tr>
-  <tr>
-    <td><label for="provinsiortu">Provinsi</label></td>
-    <td><input type="text" id="provinsiortu" name="provinsiortu" size="100" placeholder="Nama Provinsi.." required></td>
-  </tr>
-  <tr>
-    <td></td>
-    <td><input type="submit" value="Mendaftar" style="font-size: large;"></td>
-  </tr>
-  <tr>
-    <td></td>
-    <td><input type="reset" value="Reset ulang" style="font-size: large;"></td>
-  </tr>
-  </form>
-    </fieldset> 
-        </table>
-            </body>
-                </html>
+<div class ="wrap" style="">
+    <form action="contact.php" method="POST">
+        <fieldset>
+            <table width="750">
+                <h1 style="background-color:lightblue ;" align="center">FORMULIR PPDB JALUR ZONASI TAHUN 2020/2021</h1>
+    <tr>
+        <td><b>INFO PENDAFTARAN</b></td>
+    </tr>
+    <tr>
+        <td>NISN :</td>
+        <td><input type="number" name=""></td>
+    </tr>
+    <tr>
+        <td>Asal sekolah :</td>
+        <td><input type="text" name=""></td>
+    </tr>
+    <tr>
+        <td>Tahun Lulus :</td>
+        <td><input type="number" name="">
+        <td><i>(Lampirkan foto copy ijazah)</i><input type="file"></td>
+    </tr>
+    <tr>
+        <td><b>DATA CALON PESERTA</b></td>
+    </tr>
+    <tr>
+        <td>Nama Lengkap :</td>
+        <td><input type="text" name=""></td>
+    </tr>
+    <tr>
+        <td>NIK :</td>
+        <td><input type="number" name=""></td>
+    </tr>
+    <tr>
+        <td>Tempat/Tanggal Lahir :</td>
+        <td><input type="text" name="">
+        <td><input type="date" name=""> , umur :<td><input type="number"></td>
+    </tr>
+    <tr>
+        <td><i>Foto Copy Akte Kelahiran Yang Telah Dilegalisir (Di Lampirkan)</i><input type="file"></td>
+    </tr>
+    <tr>
+        <td>Jenis Kelamin :</td>
+        <td><input type="radio" name="">Laki-laki
+            <input type="radio" name="">Perempuan</td>
+    </tr>
+    <tr>
+        <td>Alamat :</td>
+        <td><textarea></textarea></td>
+    </tr>
+    <tr>
+        <td>Desa/Kel. :</td>
+        <td><input type="text" name=""></td>
+    </tr>
+    <tr>
+        <td>Kecamatan :</td>
+        <td><input type="text" name=""></td>
+    </tr>
+    <tr>
+        <td>Kabupaten :</td>
+        <td><input type="text" name=""></td>
+    </tr>
+    <tr>
+        <td>Provinsi :</td>
+        <td><input type="text" name=""></td>
+    </tr>
+    <tr>
+        <td>Email Aktif :</td>
+        <td><input type="email" name=""></td>
+    </tr>
+    <tr>
+        <td><b>DATA ORANG TUA</b><i>(Lampirkan KK)</i><input type="file"></td>
+    </tr>
+    <tr>
+        <td>Nomor Kartu Keluarga :</td>
+        <td><input type="number" name=""></td>
+    </tr>
+    <tr>
+        <td>Nama Ayah Kandung :</td>
+        <td><input type="text" name=""></td>
+    </tr>
+    <tr>
+        <td>Agama :</td>
+        <td><select>
+            <option>Islam</option>
+            <option>Kristen</option>
+            <option>Katolik</option>
+            <option>Hindu</option>
+            <option>Budha</option>
+            <option>Konghucu</option>
+            <option>tulis jika tidak tercantum</option>
+            </select></td>
+        <td>tulis disini <input type="text" name=""></td>
+    </tr>
+    <tr>
+        <td>Pekerjaan :</td>
+        <td><input type="text" name=""></td>
+    </tr>
+    <tr>
+        <td>Alamat Orang Tua :</td>
+        <td><textarea></textarea></td>
+    </tr>
+    <tr>
+        <td>Desa/Kel. :</td>
+        <td><input type="text" name=""></td>
+    </tr>
+    <tr>
+        <td>Kecamatan :</td>
+        <td><input type="text" name=""></td>
+    </tr>
+    <tr>
+        <td>Kabupaten :</td>
+        <td><input type="text" name=""></td>
+    </tr>
+    <tr>
+        <td>Provinsi :</td>
+        <td><input type="text" name=""></td>
+    </tr>
+    <tr>
+        <td>Klik Daftar Jika Sudah Mengisi Lengkap Data Pada Formulir
+        <td align="center"><input type="submit" name="submit" value="Daftar" /></td>
+    </tr>
+</table>
+    </fieldset>
+         </form>
+         </div>
+    </body>
+</html>
