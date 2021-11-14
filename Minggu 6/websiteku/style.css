@@ -1,0 +1,39 @@
+body {
+    background-image: url(Background.jpg);
+    background-size: 100%;
+    background-attachment: fixed;
+    font-family: 'Times New Roman';
+}
+nav {
+    background-color:rgb(27, 37, 179);
+    padding: 20px;
+}
+h1, h2, p, label {
+    color:white;
+}
+a:link {
+    color: white;
+    text-decoration: none;
+    padding: 5px;
+}
+a:hover {
+    color: rgb(240, 77, 13);
+}
+a {
+    color: white;
+}
+table {
+    border-collapse: collapse;
+    width: 100%;
+    background-color: rgb(199, 199, 199);
+}
+th, td {
+    padding: 8px;
+    text-align: left;
+    border-bottom: 1px solid rgb(0, 0, 0);
+}
+tr:hover{background-color:#a3a3a3}
+footer{
+    background-color:rgb(27, 37, 179);
+    padding: 10px;
+}
