@@ -1,0 +1,59 @@
+body {
+    background-color: rgb(226, 162, 25);
+    }
+    input[type=text], [type=number], [type=date], [type=email] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 30px;
+    box-sizing: border-box;
+    }
+    textarea {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 30px;
+    box-sizing: border-box;
+    }
+    input[type=submit] {
+    width: 100%;
+    background-color: #4CAF50;
+    color: white;
+    padding: 20px 20px;
+    margin: 10px 0;
+    border: none;
+    border-radius:30px;
+    cursor: pointer;
+    }
+    input[type=reset] {
+    width: 100%;
+    background-color: #fa0a0a;
+    color: white;
+    padding: 20px 20px;
+    margin: 10px 0;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    }
+    input[type=file] {
+    width: 95%;
+    background-color: #cf401c;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    }
+    h2 {
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    }
+    td {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: large;
+    }
